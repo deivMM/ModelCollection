@@ -14,7 +14,7 @@ Y0 = 0.02 #posición inicial y
 L = .1 #distancia recorrida
 ############     Parametros del Sistema     ############
 v = 0.01167 #velocidad
-tmax = 50 #tiempo máximo
+tmax = 10 #tiempo máximo
 T0 = 20 #temp. ini.
 T_aire = 25 #temp. aire
 ############     Propiedades del material     ############
@@ -163,5 +163,5 @@ def points_temp(T,XcontrolP,YcontrolP,plotRealTime):
     plt.show()
 
 T_ = calculo()
-# anim_2D(T_,True)
-points_temp(T_,[0.043,0.045,0.06],[0.05,0.1,0.075],True)
+anim_2D(T_,True)
+# points_temp(T_,[0.043,0.045,0.06],[0.05,0.1,0.075],True)
