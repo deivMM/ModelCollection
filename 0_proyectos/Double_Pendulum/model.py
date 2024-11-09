@@ -57,7 +57,6 @@ ax.set_yticks([])
 ax.set_xlim(-L1-L2,L1+L2)
 ax.set_ylim(-L1-L2,L1+L2)
 
-#############################
 
 def animate(i):
     m1_trajectory.set_data(x1[:i], y1[:i])
