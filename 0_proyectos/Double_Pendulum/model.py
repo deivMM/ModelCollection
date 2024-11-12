@@ -45,7 +45,6 @@ m2_pos_p1_degrees = 0
 m2_vel_p1 = -3
 
 y0_p1 = np.array([np.radians(m1_pos_p1_degrees), m1_vel_p1, np.radians(m2_pos_p1_degrees), m2_vel_p1])
-
 y_p1 = odeint(double_pendulum_model, y0_p1, t, args=(L1_p1, L2_p1, m1_p1, m2_p1))
 
 theta1_p1, theta2_p1 = y_p1[:,0], y_p1[:,2]
@@ -62,7 +61,6 @@ m1_p1_dot, = ax.plot(x1_p1[0], y1_p1[0], 'o', markeredgecolor='black', markeredg
 line_m2_p1_back, = ax.plot([x1_p1[0],x2_p1[0]], [y1_p1[0],y2_p1[0]], '-', color='k', lw=4, solid_capstyle='round')
 line_m2_p1_front, = ax.plot([x1_p1[0],x2_p1[0]], [y1_p1[0],y2_p1[0]], '-', color='w', lw=2, solid_capstyle='round', zorder=2)
 m2_p1_dot, = ax.plot(x2_p1[0], y2_p1[0], 'o', markeredgecolor='black', markeredgewidth=1, color='skyblue', markersize=m2_p1*10, zorder=3)
-
 
 ################################################
 # Second pendulum 
