@@ -1,7 +1,7 @@
 # Numerical model of heat equation
 Numerical model of the heat equation
 
-Temperature $ \LARGE\to T = f(x,t)[ºC]$
+Temperature $\LARGE\to  T = f(x,t)[ºC]$
 
 Time $\LARGE\to t[s]$
 
