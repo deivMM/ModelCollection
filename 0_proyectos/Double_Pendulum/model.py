@@ -51,9 +51,9 @@ theta1_p1, theta2_p1 = y_p1[:,0], y_p1[:,2]
 x1_p1, y1_p1, x2_p1, y2_p1 = get_xy(theta1_p1, theta2_p1, L1_p1, L2_p1)
 
 fig, ax  = plt.subplots(figsize=(8,8),facecolor='.85')
-fig.suptitle('Double pendulum',fontsize=20,x=0.5,y=.94,weight='semibold')
+fig.suptitle('Double pendulum',fontsize=25,x=0.5,y=.94,weight='semibold')
 # Plot the results
-m2_p1_trajectory, = ax.plot([], [], alpha=.4, color='skyblue')
+m2_p1_trajectory, = ax.plot([], [], alpha=.4, color='skyblue', lw=3)
 line_m1_p1_back, = ax.plot([0,x1_p1[0]], [0,y1_p1[0]], '-', color='k', lw=4, solid_capstyle='round')
 line_m1_p1_front, = ax.plot([0,x1_p1[0]], [0,y1_p1[0]], '-', color='w', lw=2, solid_capstyle='round', zorder=2)
 m1_p1_dot, = ax.plot(x1_p1[0], y1_p1[0], 'o', markeredgecolor='black', markeredgewidth=1, color='skyblue', markersize=m1_p1*10, zorder=3)
@@ -84,7 +84,8 @@ theta1_p2, theta2_p2 = y_p2[:,0], y_p2[:,2]
 x1_p2, y1_p2, x2_p2, y2_p2 = get_xy(theta1_p2, theta2_p2, L1_p2, L2_p2)
 
 # Plot the results
-m2_p2_trajectory, = ax.plot([], [], alpha=.4, color='salmon')
+
+m2_p2_trajectory, = ax.plot([], [], alpha=.4, color='salmon', lw=3)
 line_m1_p2_back, = ax.plot([0,x1_p2[0]], [0,y1_p2[0]], '-', color='k', lw=4, solid_capstyle='round')
 line_m1_p2_front, = ax.plot([0,x1_p2[0]], [0,y1_p2[0]], '-', color='w', lw=2, solid_capstyle='round', zorder=2)
 m1_p2_dot, = ax.plot(x1_p2[0], y1_p2[0], 'o', markeredgecolor='black', markeredgewidth=1, color='salmon', markersize=m1_p2*10, zorder=3)
@@ -98,7 +99,7 @@ m2_p2_dot, = ax.plot(x2_p2[0], y2_p2[0], 'o', markeredgecolor='black', markeredg
 ################################################
 
 time_template = 'Time = {:3.1f}s'.format
-time_text = ax.text(-(L1_p1+L2_p1)*0.25,-(L1_p1+L2_p1)*1.3, time_template(0),fontsize=20, style='italic',bbox={'facecolor': 'white', 'alpha': 1, 'pad': 10})
+time_text = ax.text(-(L1_p1+L2_p1)*0.25,-(L1_p1+L2_p1)*1.25, time_template(0),fontsize=20, style='italic',bbox={'facecolor': 'white', 'alpha': 1, 'pad': 10})
 
 ax.set_xticks([])
 ax.set_yticks([])
