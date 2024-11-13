@@ -1,3 +1,5 @@
+![' Heat equation 1D gif'](./Heat_ecuation_gif.gif)
+
 # Numerical model of heat equation
 Numerical model of the heat equation
 
