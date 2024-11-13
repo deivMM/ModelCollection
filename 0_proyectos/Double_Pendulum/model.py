@@ -129,5 +129,9 @@ def animate(i):
 fps = 25
 every_x_frame = 1 / (delta_t*fps)
 an = FuncAnimation(fig, animate, frames= np.arange(0,len(t),int(every_x_frame)), interval=20, repeat=False)
-plt.show()
+# plt.show()
+################################################
+# an.save("double_pend_gif.gif", writer=PillowWriter(fps=50))
+# print('gif created')
+
 
