@@ -1,4 +1,4 @@
-!['no se que no se cuanto'](./double_pend_gif.gif)
+!['Double pendulum gif'](./double_pend_gif.gif)
 
 
 This model simulates the motion of a double pendulum system, which consists of two masses $m_1$ and $m_2$ connected by rigid rods of lengths $L_1$ and $L_2$. Given the initial angles $\theta_1$ and $\theta_2$, angular velocities $\dot{\theta}_1$ and $\dot{\theta}_2$, and the gravitational acceleration $g$, the model calculates the angular accelerations $\ddot{\theta}_1$ and $\ddot{\theta}_2$ based on the nonlinear, coupled differential equations governing the double pendulum.
