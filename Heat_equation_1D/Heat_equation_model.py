@@ -73,5 +73,5 @@ def anim(i):
 an = FuncAnimation(f, anim, frames=len(t), init_func=init,interval=10, repeat=False)
 plt.show()
 ################################################
-an.save("Heat_ecuation_gif.gif", writer=PillowWriter(fps=50))
+an.save("Heat_equation_gif.gif", writer=PillowWriter(fps=50))
 print('gif created')
