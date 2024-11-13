@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation
+from matplotlib.animation import FuncAnimation, PillowWriter
 
 def calc_1D_flux(a,b,nx,tmax,alfa,k,fa,fb,T0):
     m = (b-a)/nx
@@ -72,3 +72,6 @@ def anim(i):
 
 an = FuncAnimation(f, anim, frames=len(t), init_func=init,interval=10, repeat=False)
 plt.show()
+################################################
+an.save("Heat_ecuation_gif.gif", writer=PillowWriter(fps=50))
+print('gif created')
