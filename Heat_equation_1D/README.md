@@ -1,4 +1,7 @@
 # Numerical model of heat equation
+
+![' Heat equation 1D gif'](./Heat_equation_gif.gif)
+
 Numerical model of the heat equation
 
 Temperature $\LARGE\to  T = f(x,t)[ºC]$
