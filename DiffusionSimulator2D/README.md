@@ -1,0 +1,1 @@
+Proceso por el cual las partículas se mueven de una región de mayor concentración a una de menor concentración, debido al movimiento aleatorio.

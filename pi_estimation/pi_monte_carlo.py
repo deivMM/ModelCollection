@@ -3,10 +3,11 @@ import time
 import numpy as np
 from numpy import random
 import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation
+from matplotlib.animation import FuncAnimation, PillowWriter
+
 
 npoints = 5000
-w = 100
+w = 100 # Window size for moving average
 pi_estimation = []
 
 def animate(i):
@@ -74,4 +75,10 @@ ax22.legend([l_pi_est_mean],['mean'],loc=1)
 
 f.suptitle('Estimating Pi using Monte Carlo',fontsize=20,x=0.5,y=.95,weight='semibold')
 an = FuncAnimation(f, animate, frames= np.arange(100,npoints+1),init_func=init, interval=1, repeat=False)
+
+#save the animation
+# print('Saving animation...')
+# an.save("pi_monte_carlo.gif", writer=PillowWriter(fps=25))
+# print('Animation saved as pi_monte_carlo.gif')
+
 plt.show()
