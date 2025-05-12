@@ -1,1 +1,4 @@
-Proceso por el cual las partículas se mueven de una región de mayor concentración a una de menor concentración, debido al movimiento aleatorio.
+
+!['2D diffusion model'](./particle_diffusion.gif)
+
+Process by which particles move from a region of higher concentration to one of lower concentration, due to random motion.
