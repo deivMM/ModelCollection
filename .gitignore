@@ -8,3 +8,5 @@
 # ignorar la carpeta scripts_pruebas
 # scripts_pruebas/
 .DS_Store
+
+venv
