@@ -7,7 +7,7 @@ box_size = 10           # Box is from (0,0) to (10,10)
 radius = 0.3            # Ball radius
 pos = np.array([5, 5], dtype=float)
 vel = np.array([2, 3], dtype=float)  # Initial velocity
-c = .9 # Coefficient of restitution
+c = .5 # Coefficient of restitution
 
 
 dt = 0.05               # Time step
