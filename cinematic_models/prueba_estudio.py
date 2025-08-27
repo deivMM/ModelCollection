@@ -36,6 +36,10 @@ lineax2, = ax2.plot([],[],'b')
 ax1.add_patch(ball)
 ax1.set_aspect('equal', adjustable='box')
 
+
+ax2.set_xlabel('Time (s)')
+ax2.set_ylabel('Velocity (m/s)')
+
 vel_list = []
 
 def init():

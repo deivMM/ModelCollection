@@ -113,8 +113,8 @@ def animate(i):
     line_m1_p1_front.set_data([0,x1_p1[i]],[0,y1_p1[i]])
     line_m2_p1_back.set_data([x1_p1[i],x2_p1[i]],[y1_p1[i],y2_p1[i]])
     line_m2_p1_front.set_data([x1_p1[i],x2_p1[i]],[y1_p1[i],y2_p1[i]])
-    m1_p1_dot.set_data(x1_p1[i], y1_p1[i])
-    m2_p1_dot.set_data(x2_p1[i], y2_p1[i])
+    m1_p1_dot.set_data([x1_p1[i]], [y1_p1[i]])
+    m2_p1_dot.set_data([x2_p1[i]], [y2_p1[i]])
     
     # Second pendulum 
     m2_p2_trajectory.set_data(x2_p2[:i], y2_p2[:i])
@@ -122,14 +122,14 @@ def animate(i):
     line_m1_p2_front.set_data([0,x1_p2[i]],[0,y1_p2[i]])
     line_m2_p2_back.set_data([x1_p2[i],x2_p2[i]],[y1_p2[i],y2_p2[i]])
     line_m2_p2_front.set_data([x1_p2[i],x2_p2[i]],[y1_p2[i],y2_p2[i]])
-    m1_p2_dot.set_data(x1_p2[i], y1_p2[i])
-    m2_p2_dot.set_data(x2_p2[i], y2_p2[i])
+    m1_p2_dot.set_data([x1_p2[i]], [y1_p2[i]])
+    m2_p2_dot.set_data([x2_p2[i]], [y2_p2[i]])
     time_text.set_text(time_template(t[i]))
 
 fps = 25
 every_x_frame = 1 / (delta_t*fps)
 an = FuncAnimation(fig, animate, frames= np.arange(0,len(t),int(every_x_frame)), interval=20, repeat=False)
-# plt.show()
+plt.show()
 ################################################
 # an.save("double_pend_gif.gif", writer=PillowWriter(fps=50))
 # print('gif created')
